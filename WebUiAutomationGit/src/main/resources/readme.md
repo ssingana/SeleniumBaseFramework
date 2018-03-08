@@ -4,7 +4,7 @@ Step 1: Getting the required jars into local maven reporsitory.
 Download the jar file WebUiAutomation-1.0.jar and save to your local drive.
 open command prompt and change directory to the location jar saved.
 Execute the following commands to get necessary details.
-mvn install:install-file -Dfile=WebUiAutomation-1.0.jar -DgroupId=com.bosch.web.ui.automation -DartifactId=WebUiAutomation -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=WebUiAutomation-1.0.jar -DgroupId=com.web.ui.automation -DartifactId=WebUiAutomation -Dversion=1.0 -Dpackaging=jar
 
 Go to libs folder and run the following command to install the ojdbc7 jar
 mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc -Dversion=7 -Dpackaging=jar
@@ -17,7 +17,7 @@ Step 2: Adding dependency to your project
 ---------------------------------------------------------------------------------
 Add below dependency to your project pom.xml file.
 		<dependency>
-			<groupId>com.bosch.web.ui.automation</groupId>
+			<groupId>com.web.ui.automation</groupId>
 			<artifactId>WebUiAutomation</artifactId>
 			<version>1.0</version>
 		</dependency>
@@ -45,7 +45,7 @@ Add the maven surefire plugin to execute test cases and to configure the custom 
 						</property>
 						<property>
 							<name>listener</name>
-							<value>com.bosch.web.ui.automation.listeners.ExecutionListenerImpl,com.bosch.web.ui.automation.listeners.InvokedMethodListenerImpl,com.bosch.web.ui.automation.listeners.ReporterImpl</value>
+							<value>com.web.ui.automation.listeners.ExecutionListenerImpl,com.web.ui.automation.listeners.InvokedMethodListenerImpl,com.web.ui.automation.listeners.ReporterImpl</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>
