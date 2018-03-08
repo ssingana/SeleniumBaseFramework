@@ -26,7 +26,7 @@ public class ESSLandingPageLinks {
 		browser.waitForVisible(txtSearch);
 		((JavascriptExecutor)browser.getDriver()).executeScript("arguments[0].value = arguments[1];", txtSearch,
 				"RBEI Holiday");
-		//txtSearch.sendKeys("RBEI Holiday");
+	
 	}
 	
 	@Test
