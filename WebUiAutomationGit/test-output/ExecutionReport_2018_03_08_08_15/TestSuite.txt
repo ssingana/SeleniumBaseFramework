@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 19.338 s <<< FAILURE! - in TestSuite
-TestCase2(com.ui.web.automation.test.SampleTest)  Time elapsed: 17.575 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.ui.web.automation.test.SampleTest.TestCase2(SampleTest.java:21)
-

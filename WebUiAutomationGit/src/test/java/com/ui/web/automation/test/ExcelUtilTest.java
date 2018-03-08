@@ -6,7 +6,7 @@ public class ExcelUtilTest {
 	
 	public static void main(String[] args) {
 		try {
-			ExcelUtil excelUtil = new ExcelUtil("C:\\IGPM\\Selenium\\ExcelUtilTestData\\TestData.xlsx", "Login");
+			ExcelUtil excelUtil = new ExcelUtil("C:\\Selenium\\ExcelUtilTestData\\TestData.xlsx", "Login");
 			for(int row = 0; row <=6; row++) {
 				for(int col=0;col<3;col++) {
 					String cellData = excelUtil.getCellData(row, col);

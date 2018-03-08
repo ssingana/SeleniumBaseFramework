@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author irg6kor
+ * @author ssingana
  *
  */
 package com.ui.web.automation.test;

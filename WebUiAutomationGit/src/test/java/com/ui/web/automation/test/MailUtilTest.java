@@ -12,7 +12,7 @@ public class MailUtilTest {
 	
 	@Test
 	public void testMailUtilMethodsWithAttachment() {
-		toList[0]="Sreenivasulu.Singana@in.bosch.com";
+		toList[0]="email.to@email.com";
 		mailUtil.sendMail(toList, "Test", new String("Testting Mail..."),"C:\\Users\\irg6kor\\eclipse-workspace\\WebUiAutomation\\smoketests.xml");
 	}
 }
