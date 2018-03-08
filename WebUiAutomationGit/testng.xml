@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Multiple Suite Files Included" parallel="methods" thread-count="2">
+	<test name="AssessmentTest">
+		<classes>
+			<class name="com.ui.web.automation.test.SampleTest"></class>
+		</classes>
+	</test>
+	<!-- <suite-files> <suite-file path="suites/smoketests.xml"></suite-file> 
+		<suite-file path="suites/regressiontests.xml"></suite-file> <suite-file path="suites/sanitytests.xml"></suite-file> 
+		</suite-files> -->
+</suite>
